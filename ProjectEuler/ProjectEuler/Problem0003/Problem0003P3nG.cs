@@ -1,7 +1,7 @@
 ﻿using System;
 using ProjectEuler.Core;
 
-namespace ProjectEuler.Problem_0003
+namespace ProjectEuler.Problem0003
 {
     /* Solution:
     Go down from square route of 600851475143 => 775,146 (in -2 steps)
@@ -12,9 +12,9 @@ namespace ProjectEuler.Problem_0003
     /// To solve problem #3.
     /// https://projecteuler.net/problem=3
     /// </summary>
-    class Problem0003P3nG
+    class Problem0003P3nG : IProblem
     {
-        public void SolveProblem()
+        public void SolveProblem(Action<float> finishCallback)
         {
             var bigNumber = 600851475143;
             var bigNumberSquare = (int)Math.Sqrt(bigNumber);
@@ -36,8 +36,8 @@ namespace ProjectEuler.Problem_0003
                 }
             }
 
-            Console.WriteLine("Wanted prime factor: " + wantedPrime);
-            Console.ReadKey();
+            if (finishCallback != null)
+                finishCallback(wantedPrime);
         }
     }
 }
