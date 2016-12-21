@@ -47,6 +47,7 @@
     <Compile Include="Core\MathHelper.cs" />
     <Compile Include="Core\Program.cs" />
     <Compile Include="Problem0003\Problem0003P3nG.cs" />
+    <Compile Include="Problem0004\Problem0004P3nG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿using ProjectEuler.Problem0003;
+﻿using ProjectEuler.Problem0004;
 using System;
 
 namespace ProjectEuler.Core
@@ -14,7 +14,7 @@ namespace ProjectEuler.Core
             Console.ReadKey();
 
             var startTime = DateTime.Now;
-            var problemSolver = new Problem0003P3nG();
+            var problemSolver = new Problem0004P3nG();
 
             problemSolver.SolveProblem(
                 solution =>
